@@ -8,14 +8,14 @@
 
     <Spinner
         android:id="@+id/Activity_dropdown"
-        android:layout_width="144dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:layout_marginBottom="14dp"
+        android:layout_width="202dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="66dp"
         android:entries="@array/names"
-        app:layout_constraintBottom_toTopOf="@+id/ActivityLevelExp"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/ActivityLevel"
+        app:layout_constraintTop_toBottomOf="@+id/HeightNumber" />
 
     <Button
         android:id="@+id/BMRCalc"
@@ -138,14 +138,14 @@
         android:id="@+id/ActivityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="81dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="29dp"
         android:text="Activity Level:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WeightNumber" />
+        app:layout_constraintBottom_toTopOf="@+id/ActivityLevelExp"
+        app:layout_constraintEnd_toStartOf="@+id/Activity_dropdown" />
 
     <TextView
         android:id="@+id/ActivityLevelExp"
