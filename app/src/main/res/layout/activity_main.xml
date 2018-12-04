@@ -12,10 +12,10 @@
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginBottom="16dp"
         android:entries="@array/names"
-        app:layout_constraintStart_toEndOf="@+id/ActivityLevel"
-        app:layout_constraintTop_toBottomOf="@+id/HeightNumber" />
+        app:layout_constraintBottom_toTopOf="@+id/ActivityLevelExp"
+        app:layout_constraintStart_toEndOf="@+id/ActivityLevel" />
 
     <Button
         android:id="@+id/BMRCalc"
@@ -88,7 +88,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginLeft="76dp"
         android:layout_marginTop="63dp"
-        android:text="Height:"
+        android:text="Height(in):"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/WeightNumber"
