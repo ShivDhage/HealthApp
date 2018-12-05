@@ -1,6 +1,5 @@
 package com.example.shiv.healthapp;
 
-import android.icu.text.NumberFormat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
