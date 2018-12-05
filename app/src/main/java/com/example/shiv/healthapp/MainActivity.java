@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,21 +16,32 @@ public class MainActivity extends AppCompatActivity {
     /** Default logging tag for messages from the main activity. */
     private static final String TAG = "Button";
 
+    int age, weight, height;
+
+    EditText ageInput;
+    EditText weightInput;
+    EditText heightInput;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ageInput = (EditText)  findViewById(R.id.ageInput);
+        weightInput = (EditText) findViewById(R.id.weightInput);;
+        heightInput = (EditText) findViewById(R.id.heightInput);;
+
         final ToggleButton GenderButton = findViewById(R.id.GenderButton);
         GenderButton.setOnClickListener(v -> {
-            Log.d("Toggle Button", "Gender Button Clicked");
-
+            Log.d("Toggle " + "", "Gender Button Clicked");
         });
 
         final Button BMRButton = findViewById(R.id.BMRButton);
         BMRButton.setOnClickListener(v -> {
             Log.d("Button", "BMR Calculation Button Clicked");
-
+            age = Integer.valueOf(ageinput.getText().toString());
+            weight = Integer.valueOf(weightinput.getText().toString());
+            height = Integer.valueOf(heightinput.getText().toString());
         });
 
         final TextView Gender = findViewById(R.id.Gender);
