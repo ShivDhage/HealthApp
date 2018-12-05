@@ -18,7 +18,7 @@
         app:layout_constraintStart_toEndOf="@+id/ActivityLevel" />
 
     <Button
-        android:id="@+id/BMRCalc"
+        android:id="@+id/BMRButton"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="84dp"
@@ -26,7 +26,7 @@
         android:layout_marginBottom="8dp"
         android:text="Calculate BMR"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/BMRText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
@@ -157,11 +157,11 @@
         android:text="Sedentary - Couch Potato      Moderate - Exercise 3-4 Times/Week Active - Exercise 5+ Times/Week"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/BMRCalc"
+        app:layout_constraintBottom_toTopOf="@+id/BMRButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/BMRText"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginStart="100dp"
