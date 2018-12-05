@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final TextView Weight = findViewById(R.id.Weight);
-        Gender.setOnClickListener(v -> {
+        Weight.setOnClickListener(v -> {
             Log.d("TextView", "Weight Text clicked");
 
         });
 
         final TextView Age = findViewById(R.id.Age);
-        Gender.setOnClickListener(v -> {
+        Age.setOnClickListener(v -> {
             Log.d("TextView", "Age Text clicked");
 
         });
