@@ -7,15 +7,15 @@
     tools:context=".MainActivity">
 
     <Spinner
-        android:id="@+id/Activity_dropdown"
+        android:id="@+id/activityDropdown"
         android:layout_width="202dp"
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="16dp"
         android:entries="@array/names"
-        app:layout_constraintBottom_toTopOf="@+id/ActivityLevelExp"
-        app:layout_constraintStart_toEndOf="@+id/ActivityLevel" />
+        app:layout_constraintBottom_toTopOf="@+id/activityLevelExp"
+        app:layout_constraintStart_toEndOf="@+id/activityLevel" />
 
     <Button
         android:id="@+id/BMRButton"
@@ -30,17 +30,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
-        android:id="@+id/GenderButton"
+        android:id="@+id/genderButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:textOff="Female"
         android:textOn="Male"
-        app:layout_constraintStart_toEndOf="@+id/Gender"
+        app:layout_constraintStart_toEndOf="@+id/gender"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Gender"
+        android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Weight"
+        android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -62,12 +62,12 @@
         android:text="Weight:"
         android:textSize="15sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toStartOf="@+id/WeightNumber"
+        app:layout_constraintEnd_toStartOf="@+id/weightInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Gender" />
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
 
     <TextView
-        android:id="@+id/Age"
+        android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -76,13 +76,13 @@
         android:text="Age:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/AgeNumber"
+        app:layout_constraintEnd_toStartOf="@+id/ageInput"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/GenderButton"
+        app:layout_constraintStart_toEndOf="@+id/genderButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Height"
+        android:id="@+id/height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
@@ -91,11 +91,11 @@
         android:text="Height(in):"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/WeightNumber"
-        app:layout_constraintTop_toBottomOf="@+id/AgeNumber" />
+        app:layout_constraintStart_toEndOf="@+id/weightInput"
+        app:layout_constraintTop_toBottomOf="@+id/ageInput" />
 
     <EditText
-        android:id="@+id/WeightNumber"
+        android:id="@+id/weightInput"
         android:layout_width="58dp"
         android:layout_height="39dp"
         android:layout_marginTop="50dp"
@@ -103,22 +103,22 @@
         android:layout_marginRight="76dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/Height"
-        app:layout_constraintStart_toEndOf="@+id/Weight"
-        app:layout_constraintTop_toBottomOf="@+id/GenderButton" />
+        app:layout_constraintEnd_toStartOf="@+id/height"
+        app:layout_constraintStart_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/genderButton" />
 
     <EditText
-        android:id="@+id/HeightNumber"
+        android:id="@+id/heightInput"
         android:layout_width="59dp"
         android:layout_height="47dp"
         android:layout_marginTop="43dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/Height"
-        app:layout_constraintTop_toBottomOf="@+id/AgeNumber" />
+        app:layout_constraintStart_toEndOf="@+id/height"
+        app:layout_constraintTop_toBottomOf="@+id/ageInput" />
 
     <EditText
-        android:id="@+id/AgeNumber"
+        android:id="@+id/ageInput"
         android:layout_width="59dp"
         android:layout_height="47dp"
         android:layout_marginStart="1dp"
@@ -129,24 +129,24 @@
         android:layout_marginBottom="43dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/HeightNumber"
+        app:layout_constraintBottom_toTopOf="@+id/heightInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Age"
+        app:layout_constraintStart_toEndOf="@+id/age"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ActivityLevel"
+        android:id="@+id/activityLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="Activity Level:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/ActivityLevelExp"
-        app:layout_constraintEnd_toStartOf="@+id/Activity_dropdown" />
+        app:layout_constraintBottom_toTopOf="@+id/activityLevelExp"
+        app:layout_constraintEnd_toStartOf="@+id/activityDropdown" />
 
     <TextView
-        android:id="@+id/ActivityLevelExp"
+        android:id="@+id/activityLevelExp"
         android:layout_width="253dp"
         android:layout_height="55dp"
         android:layout_marginEnd="16dp"

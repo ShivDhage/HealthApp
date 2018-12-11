@@ -27,54 +27,56 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ageInput = (EditText)  findViewById(R.id.ageInput);
-        weightInput = (EditText) findViewById(R.id.weightInput);;
-        heightInput = (EditText) findViewById(R.id.heightInput);;
+        ageInput = (EditText) findViewById(R.id.ageInput);
+        weightInput = (EditText) findViewById(R.id.weightInput);
+        heightInput = (EditText) findViewById(R.id.heightInput);
 
-        final ToggleButton GenderButton = findViewById(R.id.GenderButton);
+        final ToggleButton GenderButton = findViewById(R.id.genderButton);
         GenderButton.setOnClickListener(v -> {
-            Log.d("Toggle " + "", "Gender Button Clicked");
+            Log.d("Toggle Button: ", "Gender Button Clicked");
         });
 
         final Button BMRButton = findViewById(R.id.BMRButton);
         BMRButton.setOnClickListener(v -> {
-            Log.d("Button", "BMR Calculation Button Clicked");
-            age = Integer.valueOf(ageinput.getText().toString());
-            weight = Integer.valueOf(weightinput.getText().toString());
-            height = Integer.valueOf(heightinput.getText().toString());
+            Log.d(" ", "Gender Button Clicked");
+            age = Integer.valueOf(ageInput.getText().toString());
+            weight = Integer.valueOf(weightInput.getText().toString());
+            height = Integer.valueOf(heightInput.getText().toString());
+            Log.d("Button", "Age: " + age + " / Weight: " + weight + " / height: " + height);
+
         });
 
-        final TextView Gender = findViewById(R.id.Gender);
+        final TextView Gender = findViewById(R.id.gender);
         Gender.setOnClickListener(v -> {
             Log.d("TextView", "Gender Text clicked");
 
         });
 
-        final TextView Weight = findViewById(R.id.Weight);
+        final TextView Weight = findViewById(R.id.weight);
         Weight.setOnClickListener(v -> {
             Log.d("TextView", "Weight Text clicked");
 
         });
 
-        final TextView Age = findViewById(R.id.Age);
+        final TextView Age = findViewById(R.id.age);
         Age.setOnClickListener(v -> {
             Log.d("TextView", "Age Text clicked");
 
         });
 
-        final TextView Height = findViewById(R.id.Height);
+        final TextView Height = findViewById(R.id.height);
         Height.setOnClickListener(v -> {
             Log.d("TextView", "Height Text clicked");
 
         });
 
-        final TextView ActivityLevel = findViewById(R.id.ActivityLevel);
+        final TextView ActivityLevel = findViewById(R.id.activityLevel);
         ActivityLevel.setOnClickListener(v -> {
             Log.d("TextView", "ActivityLevel Text clicked");
 
         });
 
-        final TextView ActivityLevelExp = findViewById(R.id.ActivityLevelExp);
+        final TextView ActivityLevelExp = findViewById(R.id.activityLevelExp);
         ActivityLevelExp.setOnClickListener(v -> {
             Log.d("TextView", "ActivityLevelExp Text clicked");
 
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.Activity_dropdown);
+        Spinner mySpinner = (Spinner) findViewById(R.id.activityDropdown);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
