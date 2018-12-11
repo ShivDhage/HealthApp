@@ -2,6 +2,7 @@
     <string name="app_name">Health App</string>
     <string name="gender">Gender:</string>
     <string name="togglebutton">ToggleButton</string>
+    <string name="button_main">Calculate BMR</string>
     <string-array name="names">
         <item>Sedentary</item>
         <item>Moderate</item>

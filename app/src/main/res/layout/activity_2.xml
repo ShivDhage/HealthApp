@@ -7,7 +7,7 @@
     tools:context=".activity_2">
 
     <TextView
-        android:id="@+id/BMR_calc"
+        android:id="@+id/BMR_Calc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="87dp"
@@ -25,49 +25,62 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/goalText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="332dp"
         android:layout_marginRight="332dp"
+        android:layout_marginBottom="283dp"
         android:text="GOAL:"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="203dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/weeks"
+        android:id="@+id/weekText"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="EVERY WEEK"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="203dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/lose_gain"
+        android:id="@+id/loseGainInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="284dp"
         android:entries="@array/loseORgain"
-        app:layout_constraintEnd_toStartOf="@+id/weighttolose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weightToLoseInput"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        tools:layout_editor_absoluteY="203dp" />
+        app:layout_constraintStart_toEndOf="@+id/goalText" />
 
     <Spinner
-        android:id="@+id/weighttolose"
+        android:id="@+id/weightToLoseInput"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginBottom="281dp"
         android:entries="@array/weighttolose"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/weeks"
-        app:layout_constraintStart_toEndOf="@+id/lose_gain" />
+        app:layout_constraintEnd_toStartOf="@+id/weekText"
+        app:layout_constraintStart_toEndOf="@+id/loseGainInput" />
+
+    <Button
+        android:id="@+id/suggestionButton"
+        android:layout_width="154dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="96dp"
+        android:text="Get Suggestion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

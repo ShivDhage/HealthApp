@@ -1,8 +1,10 @@
 package com.example.shiv.healthapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -14,9 +16,10 @@ import android.widget.ToggleButton;
 public class MainActivity extends AppCompatActivity {
 
     /** Default logging tag for messages from the main activity. */
-    private static final String TAG = "Button";
+    private static final String LOG_TAG = "Button";
 
     int age, weight, height;
+    String gender = "";
 
     EditText ageInput;
     EditText weightInput;
@@ -32,19 +35,18 @@ public class MainActivity extends AppCompatActivity {
         heightInput = (EditText) findViewById(R.id.heightInput);
 
         final ToggleButton GenderButton = findViewById(R.id.genderButton);
-        GenderButton.setOnClickListener(v -> {
-            Log.d("Toggle Button: ", "Gender Button Clicked");
+        GenderButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                gender = "male";
+                Log.d(LOG_TAG, "Male Chosen");
+            } else {
+                gender = "female";
+                Log.d(LOG_TAG, "Female Chosen");
+            }
         });
 
         final Button BMRButton = findViewById(R.id.BMRButton);
-        BMRButton.setOnClickListener(v -> {
-            Log.d(" ", "Gender Button Clicked");
-            age = Integer.valueOf(ageInput.getText().toString());
-            weight = Integer.valueOf(weightInput.getText().toString());
-            height = Integer.valueOf(heightInput.getText().toString());
-            Log.d("Button", "Age: " + age + " / Weight: " + weight + " / height: " + height);
 
-        });
 
         Spinner mySpinner = (Spinner) findViewById(R.id.activityDropdown);
 
@@ -52,5 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
+    }
+
+    public void launchSecondActivity(View view) {
+        Log.d(LOG_TAG, "BMR Gender Button Clicked");
     }
 }
