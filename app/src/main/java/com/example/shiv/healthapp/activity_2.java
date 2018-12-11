@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 
@@ -16,6 +17,7 @@ public class activity_2 extends AppCompatActivity {
 
     String loseOrGain = "";
     int pounds;
+    Double BMR;
 
     EditText poundsInput;
 
@@ -23,6 +25,13 @@ public class activity_2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
+        Intent intent = getIntent();
+        BMR = intent.getDoubleExtra("BMR", 0);
+
+        TextView txtView = (TextView) findViewById(R.id.BMRNum);
+        txtView.setText("" + BMR);
+
 
         poundsInput = (EditText) findViewById(R.id.poundsInput);
 

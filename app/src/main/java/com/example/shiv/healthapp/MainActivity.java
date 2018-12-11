@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "Button";
 
     int age, weight, height;
+
+    Double BMR;
     String gender = "";
-    String activityLevel = "";
 
     EditText ageInput;
     EditText weightInput;
@@ -54,7 +55,19 @@ public class MainActivity extends AppCompatActivity {
         weight = Integer.valueOf(weightInput.getText().toString());
         height = Integer.valueOf(heightInput.getText().toString());
 
+        weight = weight / 2;
+
+        height = height * 2;
+
+        if (gender.equals("male")) {
+            BMR = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+        } else {
+            BMR = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+        }
+
+
         Intent intent = new Intent(this, activity_2.class);
+        intent.putExtra("BMR", BMR);
         startActivity(intent);
 
     }

@@ -16,7 +16,7 @@
         android:onClick="launchSecondActivity"
         android:text="@string/button_main"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/BMRText"
+        app:layout_constraintBottom_toTopOf="@+id/BMRNum"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
@@ -125,7 +125,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/BMRText"
+        android:id="@+id/BMRNum"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginStart="100dp"

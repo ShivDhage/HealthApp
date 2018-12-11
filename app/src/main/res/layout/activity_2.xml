@@ -88,4 +88,17 @@
         app:layout_constraintBottom_toTopOf="@+id/suggestionButton"
         app:layout_constraintStart_toEndOf="@+id/loseGainButton" />
 
+    <TextView
+        android:id="@+id/BMRNum"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="55dp"
+        android:text="BMRNum"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/poundsInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
