@@ -6,4 +6,68 @@
     android:layout_height="match_parent"
     tools:context=".activity_2">
 
+    <TextView
+        android:id="@+id/BMR_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginRight="296dp"
+        android:layout_marginBottom="375dp"
+        android:background="@null"
+        android:text="BMR:"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="332dp"
+        android:layout_marginRight="332dp"
+        android:text="GOAL:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/weeks"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="EVERY WEEK"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Spinner
+        android:id="@+id/lose_gain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/loseORgain"
+        app:layout_constraintEnd_toStartOf="@+id/weighttolose"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Spinner
+        android:id="@+id/weighttolose"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="281dp"
+        android:entries="@array/weighttolose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weeks"
+        app:layout_constraintStart_toEndOf="@+id/lose_gain" />
+
 </android.support.constraint.ConstraintLayout>

@@ -7,4 +7,16 @@
         <item>Moderate</item>
         <item>Active</item>
     </string-array>
+    <string-array name="loseORgain">
+        <item>Lose</item>
+        <item>Gain</item>
+    </string-array>
+    <string-array name="weighttolose">
+        <item>0.25 lbs</item>
+        <item>0.5 lbs</item>
+        <item>0.75 lbs</item>
+        <item>1 lb</item>
+        <item>1.25 lbs</item>
+        <item>1.5 lbs</item>
+    </string-array>
 </resources>
