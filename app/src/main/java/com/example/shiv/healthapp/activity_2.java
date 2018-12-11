@@ -55,7 +55,10 @@ public class activity_2 extends AppCompatActivity {
         Log.d(LOG_TAG, "Suggestion Button clicked");
         pounds = Integer.valueOf(poundsInput.getText().toString());
 
+        int passedCalories = pounds * 500;
+
         Intent intentTwo = new Intent(this, activity_3.class);
+        intentTwo.putExtra("CALORIE_AMOUNT", passedCalories);
         startActivity(intentTwo);
     }
 }

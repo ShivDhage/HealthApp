@@ -22,6 +22,8 @@
     <string name="calories_per_serving">Calories per Serving</string>
     <string name="daily_value">Daily Value</string>
     <string name="pounds">Pounds</string>
+    <string name="lessormore">lessOrMore</string>
+    <string name="calorietext">calorieText</string>
     <string-array name="loseOrgain">
         <item>Lose</item>
         <item>Gain</item>
