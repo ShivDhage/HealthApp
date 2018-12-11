@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name">Health App</string>
     <string name="gender">Gender:</string>
-    <string name="togglebutton">ToggleButton</string>
     <string name="button_main">Calculate BMR</string>
-    <string-array name="names">
-        <item>Sedentary</item>
-        <item>Moderate</item>
-        <item>Active</item>
-    </string-array>
+    <string name="activity2_name">activity_2</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="weight">Weight:</string>
+    <string name="age">Age:</string>
+    <string name="height_in">Height(in):</string>
+    <string name="bmr_basal_metabolic_rate">BMR - Basal Metabolic Rate</string>
+    <string name="lose">lose</string>
+    <string name="gain">gain</string>
+    <string name="get_suggestion">Get Suggestion</string>
+    <string name="every_week">EVERY WEEK</string>
+    <string name="goal">GOAL:</string>
+    <string name="bmr">BMR:</string>
     <string-array name="loseORgain">
         <item>Lose</item>
         <item>Gain</item>

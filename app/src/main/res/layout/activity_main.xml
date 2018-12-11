@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
-        android:id="@+id/activityDropdown"
-        android:layout_width="202dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="16dp"
-        android:entries="@array/names"
-        app:layout_constraintBottom_toTopOf="@+id/activityLevelExp"
-        app:layout_constraintStart_toEndOf="@+id/activityLevel" />
-
     <Button
         android:id="@+id/BMRButton"
         android:layout_width="wrap_content"
@@ -35,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:textOff="Female"
-        android:textOn="Male"
+        android:textOff="@string/female"
+        android:textOn="@string/male"
         app:layout_constraintStart_toEndOf="@+id/gender"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +36,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="116dp"
-        android:text="Gender:"
+        android:text="@string/gender"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +49,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="75dp"
-        android:text="Weight:"
+        android:text="@string/weight"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/weightInput"
@@ -74,7 +63,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="116dp"
-        android:text="Age:"
+        android:text="@string/age"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/ageInput"
@@ -89,7 +78,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginLeft="76dp"
         android:layout_marginTop="63dp"
-        android:text="Height(in):"
+        android:text="@string/height_in"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/weightInput"
@@ -136,37 +125,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/activityLevel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Activity Level:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/activityLevelExp"
-        app:layout_constraintEnd_toStartOf="@+id/activityDropdown" />
-
-    <TextView
-        android:id="@+id/activityLevelExp"
-        android:layout_width="253dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="Sedentary - Couch Potato      Moderate - Exercise 3-4 Times/Week Active - Exercise 5+ Times/Week"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/BMRButton"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
         android:id="@+id/BMRText"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginBottom="1dp"
-        android:text="BMR - Basal Metabolic Rate"
+        android:text="@string/bmr_basal_metabolic_rate"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
