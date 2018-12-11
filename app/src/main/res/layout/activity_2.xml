@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/loseGainButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -82,9 +82,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="110dp"
         android:ems="10"
-        android:hint="Pounds"
+        android:hint="@string/pounds"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/suggestionButton"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton" />
+        app:layout_constraintStart_toEndOf="@+id/loseGainButton" />
 
 </android.support.constraint.ConstraintLayout>

@@ -15,7 +15,14 @@
     <string name="every_week">EVERY WEEK</string>
     <string name="goal">GOAL:</string>
     <string name="bmr">BMR:</string>
-    <string-array name="loseORgain">
+    <string name="you_need_to_consume">You need to consume</string>
+    <string name="calories">calories</string>
+    <string name="per_day">per day</string>
+    <string name="Sample_Recipe">Sample Recipe:</string>
+    <string name="calories_per_serving">Calories per Serving</string>
+    <string name="daily_value">Daily Value</string>
+    <string name="pounds">Pounds</string>
+    <string-array name="loseOrgain">
         <item>Lose</item>
         <item>Gain</item>
     </string-array>
