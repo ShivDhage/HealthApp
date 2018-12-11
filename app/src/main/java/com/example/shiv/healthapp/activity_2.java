@@ -1,9 +1,12 @@
 package com.example.shiv.healthapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ToggleButton;
 
 
@@ -14,10 +17,14 @@ public class activity_2 extends AppCompatActivity {
     String loseOrGain = "";
     int pounds;
 
+    EditText poundsInput;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
+        poundsInput = (EditText) findViewById(R.id.poundsInput);
 
         final ToggleButton loseGainButton = findViewById(R.id.loseGainButton);
         loseGainButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -33,5 +40,13 @@ public class activity_2 extends AppCompatActivity {
 
         final Button suggestionButton = findViewById(R.id.suggestionButton);
 
+    }
+
+    public void launchThirdActivity(View view) {
+        Log.d(LOG_TAG, "Suggestion Button clicked");
+        pounds = Integer.valueOf(poundsInput.getText().toString());
+
+        Intent intentTwo = new Intent(this, activity_3.class);
+        startActivity(intentTwo);
     }
 }

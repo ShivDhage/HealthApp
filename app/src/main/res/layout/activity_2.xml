@@ -58,6 +58,7 @@
         android:layout_height="65dp"
         android:layout_marginBottom="96dp"
         android:text="@string/get_suggestion"
+        android:onClick="launchThirdActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -75,7 +76,7 @@
         app:layout_constraintStart_toEndOf="@+id/goalText" />
 
     <EditText
-        android:id="@+id/poundInput"
+        android:id="@+id/poundsInput"
         android:layout_width="70dp"
         android:layout_height="48dp"
         android:layout_marginStart="10dp"
