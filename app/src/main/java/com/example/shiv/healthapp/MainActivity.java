@@ -46,48 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        final TextView Gender = findViewById(R.id.gender);
-        Gender.setOnClickListener(v -> {
-            Log.d("TextView", "Gender Text clicked");
-
-        });
-
-        final TextView Weight = findViewById(R.id.weight);
-        Weight.setOnClickListener(v -> {
-            Log.d("TextView", "Weight Text clicked");
-
-        });
-
-        final TextView Age = findViewById(R.id.age);
-        Age.setOnClickListener(v -> {
-            Log.d("TextView", "Age Text clicked");
-
-        });
-
-        final TextView Height = findViewById(R.id.height);
-        Height.setOnClickListener(v -> {
-            Log.d("TextView", "Height Text clicked");
-
-        });
-
-        final TextView ActivityLevel = findViewById(R.id.activityLevel);
-        ActivityLevel.setOnClickListener(v -> {
-            Log.d("TextView", "ActivityLevel Text clicked");
-
-        });
-
-        final TextView ActivityLevelExp = findViewById(R.id.activityLevelExp);
-        ActivityLevelExp.setOnClickListener(v -> {
-            Log.d("TextView", "ActivityLevelExp Text clicked");
-
-        });
-
-        final TextView BMRText = findViewById(R.id.BMRText);
-        BMRText.setOnClickListener(v -> {
-            Log.d("TextView", "BMR Text clicked");
-
-        });
-
         Spinner mySpinner = (Spinner) findViewById(R.id.activityDropdown);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
