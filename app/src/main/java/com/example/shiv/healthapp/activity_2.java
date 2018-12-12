@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 
+
 public class activity_2 extends AppCompatActivity {
 
     private static final String LOG_TAG = "Button";

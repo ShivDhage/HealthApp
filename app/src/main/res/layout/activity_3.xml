@@ -37,52 +37,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
         android:text="@string/per_day"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/suggestionPartOneText" />
-
-    <TextView
-        android:id="@+id/sampleRecipeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:text="@string/Sample_Recipe"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/nutrientText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginBottom="113dp"
-        android:text="@string/calories_per_serving"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/dailyValueText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:layout_marginBottom="113dp"
-        android:text="@string/daily_value"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/calorieText"
@@ -103,10 +64,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginTop="38dp"
         android:text="@string/lessormore"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/sampleRecipeText"
-        app:layout_constraintStart_toEndOf="@+id/suggestionPartTwoText" />
+        app:layout_constraintStart_toEndOf="@+id/suggestionPartTwoText"
+        app:layout_constraintTop_toBottomOf="@+id/suggestionPartOneText" />
 </android.support.constraint.ConstraintLayout>
